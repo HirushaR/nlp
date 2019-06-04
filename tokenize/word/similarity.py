@@ -9,9 +9,9 @@ loaf = sa2[1]
 bread =sa3[0]
 
 # wu - palmer similarity
-#print(bread.wup_similarity(cake))
+print(bread.wup_similarity(bread))
 #print(loaf.hypernyms())
 
-ref = loaf.hypernyms()[0]
-print(ref)
-print(loaf.shortest_path_distance(ref))
+ref = bread.hypernyms()[0]
+#print(ref)
+print(cake.shortest_path_distance(ref))
