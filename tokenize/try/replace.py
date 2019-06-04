@@ -1,4 +1,4 @@
 from regclass import RegexpReplacer
 
 re = RegexpReplacer()
-re.replace("he's gone")
+result = re.replace("he's gone")

@@ -9,4 +9,5 @@ print(stm.stem('dancing'))
 print(stm.stem('believes'))
 print(lzr.lemmatize('believes'))
 print(stm.stem('buses'))
+#TODO:stem is like clear last word
 print(lzr.lemmatize('buses'))
