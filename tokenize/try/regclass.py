@@ -1,6 +1,6 @@
 #you have to add this file into library ,site-packages folder
 #after you add you can use this file as a class
-
+from nltk.corpus import wordnet
 import re;
 givenpatterns = [(r'won\'t', 'will not'),
                  (r'\'s', ' is'),
@@ -23,6 +23,8 @@ class RepeatReplacer(object):
         self.repl = r'\1\2\3'
 
     def replace(self, word):
+        if wordnet.synsets(word):
+            return word
         loop_res = self.regex.sub(self.repl, word)
         if(word == loop_res):
             return loop_res
